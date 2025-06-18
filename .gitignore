@@ -1,0 +1,41 @@
+# Built application files
+*.apk
+*.aab
+*.jar
+*.class
+
+# Files for the Dalvik VM
+*.dex
+
+# Gradle files
+.gradle/
+/build/
+app/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# OSX files
+.DS_Store
+
+# Android Studio files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Log Files
+*.log
+
+# NPM / Node.js
+node_modules/
+npm-debug.log*
+
+# Keystore
+*.keystore
+*.jks
+/release.keystore
+/debug.keystore

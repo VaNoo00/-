@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registration">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_background"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="308dp"
+            android:layout_height="595dp"
+            android:background="@drawable/rad"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/_2025_06_12_093210393"
+                    android:layout_marginLeft="35dp"
+                    tools:ignore="ContentDescription,HardcodedText,RtlHardcoded" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="OMNIX"
+                    android:textColor="@color/black"
+                    android:textSize="50dp"
+                    android:fontFamily="@font/jaro"
+                    tools:ignore="HardcodedText,SpUsage">
+
+                </TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Регистрация"
+                android:textColor="@color/black"
+                android:textSize="33dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"
+                tools:ignore="HardcodedText,RtlHardcoded,SpUsage" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/proverka"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Решаем вместе"
+                android:textColor="#808080"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textName"
+                android:layout_marginLeft="15dp"
+                android:hint="Имя пользователя"
+                app:counterEnabled="true"
+                app:counterMaxLength="15"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textNameEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textEmail"
+                android:layout_marginLeft="15dp"
+                android:hint="Email"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textEmailEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textPassword"
+                android:layout_marginLeft="15dp"
+                android:hint="Пароль"
+                app:endIconMode="password_toggle"
+                app:counterEnabled="true"
+                app:counterMaxLength="20">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textPasswordEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textPovtPassword"
+                android:layout_marginLeft="15dp"
+                android:hint="Повторите пароль"
+                app:endIconMode="password_toggle"
+                app:counterEnabled="true"
+                app:counterMaxLength="20">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textPovtPasswordEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/registr"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text="Регистрация"
+                android:backgroundTint="@color/white"
+                android:textColor="#1f75fe"
+                app:cornerRadius="5dp"
+                app:strokeWidth="2dp"
+                app:strokeColor="#999999"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                tools:ignore="HardcodedText,RtlHardcoded,SpUsage,UnusedAttribute" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rad"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="У вас уже есть аккаунт?"
+                    android:textColor="#808080"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,RtlHardcoded,SpUsage,TextSizeCheck" />
+
+                <TextView
+                    android:id="@+id/perehodAut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Авторизуйтесь!"
+                    android:textColor="#1f75fe"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
