@@ -25,8 +25,11 @@ import androidx.lifecycle.ViewModelProvider;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 
 public class main_screen extends AppCompatActivity {
     // класс для сохранения данных в списке
@@ -131,6 +134,10 @@ public class main_screen extends AppCompatActivity {
     boolean startbool = false;
     boolean endbool = false;
     public ArrayList<String> items;
+    private String getDateTime(){
+        DateFormat df = new SimpleDateFormat("MM.dd, hh:mm:ss.SSS");
+        return df.format(Calendar.getInstance().getTime());
+    }
     public ArrayAdapter<String> adapter;
     public int flag;
     Button historyBtn, btnCukerman, btnNiven, btnConstKaprekar, btnFindkaprekar, btnPoisk, btnCleaning;
@@ -201,58 +208,70 @@ public class main_screen extends AppCompatActivity {
                             Toast.makeText(main_screen.this, "Выберите задачу", Toast.LENGTH_SHORT).show();
                         } else if (flag == 1) { //если выбрана первая задача то перебираем значения
                             int f = 0;
+                            viewModel.items.add("[" + getDateTime() + "] "+ "Начало поиска");
                             for (int i = Integer.parseInt(startEdit.getText().toString().trim());
                                  i <= Integer.parseInt(endEdit.getText().toString().trim()); i++) {
                                 if (Cukerman(i)) {
                                     f = 1;
-                                    viewModel.items.add(String.valueOf(i));
+                                    viewModel.items.add(String.valueOf("[" + getDateTime() + "] " + i));
                                     adapter.notifyDataSetChanged();
                                 }
                             }
+                            viewModel.items.add("[" + getDateTime() + "] "+"Конец поиска");
+                            adapter.notifyDataSetChanged();
                             if (f == 0) {
-                                viewModel.items.add("Ничего не найдено");
+                                viewModel.items.add("[" + getDateTime() + "] " +"Ничего не найдено");
                                 adapter.notifyDataSetChanged();
                             }
                         } else if (flag == 2) { //если выбрана вторая задача то перебираем значения
                             int f = 0;
+                            viewModel.items.add("[" + getDateTime() + "] "+ "Начало поиска");
                             for (int i = Integer.parseInt(startEdit.getText().toString().trim());
                                  i <= Integer.parseInt(endEdit.getText().toString().trim()); i++) {
                                 if (Niven(i)) {
                                     f = 1;
-                                    viewModel.items.add(String.valueOf(i));
+                                    viewModel.items.add(String.valueOf("[" + getDateTime() + "] " +i));
                                     adapter.notifyDataSetChanged();
                                 }
                             }
+                            viewModel.items.add("[" + getDateTime() + "] "+"Конец поиска");
+                            adapter.notifyDataSetChanged();
                             if (f == 0) {
-                                viewModel.items.add("Ничего не найдено");
+                                viewModel.items.add("[" + getDateTime() + "] " +"Ничего не найдено");
                                 adapter.notifyDataSetChanged();
                             }
                         } else if (flag == 3) {
                             int f = 0; //если выбрана третья задача то перебираем значения
+                            viewModel.items.add("[" + getDateTime() + "] "+ "Начало поиска");
                             for (int i = Integer.parseInt(startEdit.getText().toString().trim());
                                  i <= Integer.parseInt(endEdit.getText().toString().trim()); i++) {
                                 if (ConstKaprekar(i)) {
                                     f = 1;
-                                    viewModel.items.add(String.valueOf(i));
+                                    viewModel.items.add(String.valueOf("[" + getDateTime() + "] " +i));
                                     adapter.notifyDataSetChanged();
                                 }
                             }
+                            viewModel.items.add("[" + getDateTime() + "] "+"Конец поиска");
+                            adapter.notifyDataSetChanged();
                             if (f == 0) {
-                                viewModel.items.add("Ничего не найдено");
+                                viewModel.items.add("[" + getDateTime() + "] " +"Ничего не найдено");
                                 adapter.notifyDataSetChanged();
                             }
                         } else if (flag == 4) { //если выбрана четвертая задача то перебираем значения
                             int f = 0;
+                            viewModel.items.add("[" + getDateTime() + "] "+ "Начало поиска");
                             for (int i = Integer.parseInt(startEdit.getText().toString().trim());
                                  i <= Integer.parseInt(endEdit.getText().toString().trim()); i++) {
                                 if (FindNumKaprekar(i)) {
                                     f = 1;
-                                    viewModel.items.add(String.valueOf(i));
+                                    viewModel.items.add(String.valueOf("[" + getDateTime() + "] " +i));
                                     adapter.notifyDataSetChanged();
                                 }
                             }
+                            viewModel.items.add("[" + getDateTime() + "] "+"Конец поиска");
+                            adapter.notifyDataSetChanged();
                             if (f == 0) {
-                                viewModel.items.add("Ничего не найдено");
+                                viewModel.items.add("[" + getDateTime() + "] " +"Ничего не найдено");
                                 adapter.notifyDataSetChanged();
                             }
                         }
@@ -265,7 +284,7 @@ public class main_screen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 flag = 1;
-                viewModel.items.add("Задача на нахождение чисел Цукермана.");
+                viewModel.items.add("[" + getDateTime() + "] " +"Задача на нахождение чисел Цукермана.");
                 adapter.notifyDataSetChanged();
             }
         });
@@ -273,7 +292,7 @@ public class main_screen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 flag = 2;
-                viewModel.items.add("Задача на нахождение чисел Нивена.");
+                viewModel.items.add("[" + getDateTime() + "] " +"Задача на нахождение чисел Нивена.");
                 adapter.notifyDataSetChanged();
             }
         });
@@ -281,7 +300,7 @@ public class main_screen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 flag = 3;
-                viewModel.items.add("Задача на нахождение постоянной Капрекара 6174.");
+                viewModel.items.add("[" + getDateTime() + "] " +"Задача на нахождение постоянной Капрекара 6174.");
                 adapter.notifyDataSetChanged();
             }
         });
@@ -289,7 +308,7 @@ public class main_screen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 flag = 4;
-                viewModel.items.add("Задача на нахождение чисел Капрекара.");
+                viewModel.items.add("[" + getDateTime() + "] " +"Задача на нахождение чисел Капрекара.");
                 adapter.notifyDataSetChanged();
             }
         });
