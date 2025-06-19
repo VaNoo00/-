@@ -169,26 +169,30 @@ public class registration extends AppCompatActivity {
          * - Проверка длины пароля
          * - Переход к полю повтора пароля
          */
-        passwordEditText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+        passwordEditText.addTextChangedListener(new TextWatcher() {
             @Override
-            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                if (actionId == EditorInfo.IME_ACTION_NEXT) {
-                    String password = passwordEditText.getText().toString();
-                    if (password.length() < 8) {
-                        passwordLayout.setError("Пароль должен содержать минимум 8 символов");
-                        checkPassword = false;
-                    } else if (password.length() > 20) {
-                        passwordLayout.setError("Пароль не должен содержать больше 20 символов");
-                        checkPassword = false;
-                    } else {
-                        passwordLayout.setError(null);
-                        checkPassword = true;
-                        povtPassEditText.requestFocus();
-                    }
-                    return true;
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                String password = passwordEditText.getText().toString();
+                if (password.length() < 8) {
+                    passwordLayout.setError("Пароль должен содержать минимум 8 символов");
+                    checkPassword = false;
+                } else if (password.length() > 20) {
+                    passwordLayout.setError("Пароль не должен содержать больше 20 символов");
+                    checkPassword = false;
+                } else {
+                    passwordLayout.setError(null);
+                    checkPassword = true;
                 }
-                return false;
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+
             }
         });
         /**
