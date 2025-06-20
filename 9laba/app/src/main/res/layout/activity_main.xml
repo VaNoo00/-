@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--     1-->
+
+
+<!--    <TextView-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:text="Hello Android "-->
+<!--        android:fontFamily="sans-serif"-->
+<!--        android:textSize="26sp"-->
+<!--        android:background="#ffebee"-->
+<!--        android:textColor="#f44336"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        tools:ignore="MissingConstraints" />-->
+<!--    <TextView-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:text="Hello Java"-->
+<!--        android:textAllCaps="true"-->
+<!--        android:textSize="26sp"-->
+<!--        android:background="#ede7f6"-->
+<!--        android:textColor="#7e57c2"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        tools:ignore="MissingConstraints" />-->
+<!--    <TextView-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:text="Hello World"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        android:textSize="26sp"-->
+<!--        android:background="#e8eaf6"-->
+<!--        android:textColor="#5c6bc0"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+
+
+<!--    3-->
+<!--<TextView-->
+<!--    android:id="@+id/changeTxt"-->
+<!--    android:textSize="45dp"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Hello world!"-->
+<!--    tools:ignore="MissingConstraints" />-->
+
+
+
+
+<!--    4-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 40sp"-->
+<!--            android:textSize="40sp"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 21sp"-->
+<!--            android:textSize="21sp"/>-->
+<!--    </LinearLayout>-->
+
+
+
+<!--    5-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#C32121"-->
+<!--            android:text="Привет 40sp"-->
+<!--            android:textSize="40sp"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/changeTxt3"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#4caf50"-->
+<!--            android:background="@color/black"-->
+<!--            android:text="Привет 21sp"-->
+<!--            android:textSize="21sp"/>-->
+<!--    </LinearLayout>-->
+
+
+<!--      6-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+<!--    <TextView-->
+<!--        android:id="@+id/changeTxt"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Шрифт 1"-->
+<!--        android:textSize="20dp" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="cursive"-->
+<!--        android:text="Шрифт 2"-->
+<!--        android:textSize="20dp"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="monospace"-->
+<!--        android:text="Шрифт 3"-->
+<!--        android:textSize="20dp" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="serif"-->
+<!--        android:text="Шрифт 4"-->
+<!--        android:textSize="20dp" />-->
+
+<!--    </LinearLayout>-->
+
+
+<!--    7-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textColor="#C32121"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 40sp" />-->
+
+<!--        <TextView-->
+<!--            android:textSize="21dp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textColor="#4CAF50"-->
+<!--            android:background="@color/black"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 21dp" />-->
+<!--    </LinearLayout>-->
+
+
+
+<!--    8-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:letterSpacing="0.3"-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textColor="#C32121"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 40sp" />-->
+
+<!--        <TextView-->
+<!--            android:letterSpacing="1.2"-->
+<!--            android:textSize="21dp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textColor="#4CAF50"-->
+<!--            android:background="@color/black"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 21dp" />-->
+<!--    </LinearLayout>-->
+
+<!--    9-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:textAlignment="center"-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textColor="#C32121"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 40sp" />-->
+
+<!--        <TextView-->
+<!--            android:textAlignment="textEnd"-->
+<!--            android:textSize="21dp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textColor="#4CAF50"-->
+<!--            android:background="@color/black"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 21dp" />-->
+<!--    </LinearLayout>-->
+
+
+
+<!--    10-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:maxLines="1"-->
+<!--            android:textAlignment="center"-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textColor="#C32121"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 40sp sdadaaasdadasd" />-->
+
+<!--        <TextView-->
+<!--            android:maxLength="5"-->
+<!--            android:id="@+id/changeTxt2"-->
+<!--            android:textAlignment="textEnd"-->
+<!--            android:textSize="21dp"-->
+<!--            android:textStyle="italic"-->
+<!--            android:textColor="#4CAF50"-->
+<!--            android:background="@color/black"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 21dp sdadaaasdadasd" />-->
+<!--    </LinearLayout>-->
+
+
+<!--    11-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:text="Привет 40sp"-->
+<!--            android:textIsSelectable="true"-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textStyle="italic"-->
+<!--            android:fontFamily="cursive"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textColor="#BC3535"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--    </LinearLayout>-->
+
+
+<!--      12-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:text="Посетите сайт https://www.oat.ru/"-->
+<!--            android:textSize="21sp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:autoLink="web|email"-->
+<!--            app:layout_constraintLeft_toLeftOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--    </LinearLayout>-->
+
+<!--    14-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:textAlignment="center"-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="40sp"-->
+<!--            android:textColor="#C32121"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Привет 40sp" />-->
+<!--    </LinearLayout>-->
+
+<!--    15-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:textAlignment="center"-->
+<!--            android:id="@+id/changeTxt"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--    </LinearLayout>-->
+
+<!--            16-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <TextView-->
+<!--            android:textAlignment="center"-->
+<!--            android:id="@+id/changeTxt51"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--        <TextView-->
+<!--            android:textAlignment="center"-->
+<!--            android:id="@+id/changeTxt52"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--    </LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
